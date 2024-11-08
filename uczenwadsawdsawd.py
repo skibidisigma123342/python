@@ -4,22 +4,22 @@
 from tkinter.font import names, nametofont
 
 
-class Doctor:
+class Task:
 
-    def __init__(self, name):
-        self.name = name
-
-
-class Patient:
-
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, task):
+        self.task = task
 
 
-    def introduce_doctor(self, doctor):
-        print(f"Hello {doctor.name}!")
+class Task_Manager:
+
+    def __init__(self, Delete):
+        self.Delete = Delete
 
 
-doctor1 = Doctor("<Skib. Albert>")
-patient1 = Patient("<Toiletor>")
-patient1.introduce_doctor(doctor1)
+    def task(self, do_task):
+        print(f"Task manager {Task}file!")
+
+
+Task1 = Task("<Delete file virus.exe.toilets>")
+Task_Manager1 = Task_Manager("<File deleted>")
+Task1.say_delete(Task_Manager1)
